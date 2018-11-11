@@ -23,6 +23,7 @@ public class DateServer {
         try {
             while (true) {
                 Socket socket = listener.accept();
+/** Clients respond on Port 9090 as socket (socket = client) **/
                 try {
                     PrintWriter out =
                         new PrintWriter(socket.getOutputStream(), true);

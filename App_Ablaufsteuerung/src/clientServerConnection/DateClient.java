@@ -27,6 +27,6 @@ public class DateClient {
             new BufferedReader(new InputStreamReader(s.getInputStream()));
         String answer = input.readLine();
         JOptionPane.showMessageDialog(null, answer);
-        System.exit(0);
+        System.exit(0); /** exits system-dialog field**/
     }
 }
