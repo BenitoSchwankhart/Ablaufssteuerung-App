@@ -25,6 +25,6 @@ public class TCPServer
            outToClient.writeBytes(capitalizedSentence); 
            connectionSocket.close();
          //  welcomeSocket.close();
-        }
+        } 
      }
 }
