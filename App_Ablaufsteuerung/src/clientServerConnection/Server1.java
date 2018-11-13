@@ -1,4 +1,4 @@
-package ConnectionTry;
+package clientServerConnection;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.io.*; 
 import java.net.*; 
 
-public class TCPServer 
+public class Server1 
 {
     public static void main(String argv[]) throws Exception 
     {
@@ -25,6 +25,6 @@ public class TCPServer
            outToClient.writeBytes(capitalizedSentence); 
            connectionSocket.close();
          //  welcomeSocket.close();
-        } 
+        }
      }
 }

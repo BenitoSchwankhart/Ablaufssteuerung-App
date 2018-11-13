@@ -1,16 +1,18 @@
-package ConnectionTry;
+package clientServerConnection;
+
 
 import java.io.*; 
 import java.net.*;  
 import javax.swing.JOptionPane;
 import java.util.Scanner;
+
 class TCPClient { 
 public static void main(String argv[]) throws Exception
 { 
     String sentence;
     String modifiedSentence;
     BufferedReader inFromUser =new BufferedReader(new   InputStreamReader(System.in));
-    Socket clientSocket = new Socket(InetAddress.getByName("141.58.218.183"), 1111);
+    Socket clientSocket = new Socket(InetAddress.getByName("141.58.218.183"), 6789);
     DataOutputStream outToServer =new DataOutputStream(clientSocket.getOutputStream());
     BufferedReader inFromServer =new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
     System.out.print("Enter characters to be capitalized: ");
