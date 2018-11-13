@@ -8,7 +8,7 @@ public class SimpleClient {
 	public static void main(String[] args) {
 		String a = "Hallo Server";
 		try {
-			Socket s = new Socket("141.58.220.192",9090);
+			Socket s = new Socket("141.58.218.183",9090);
 			DataOutputStream dout = new DataOutputStream(s.getOutputStream());
 			dout.writeUTF(a);
 			dout.flush();
