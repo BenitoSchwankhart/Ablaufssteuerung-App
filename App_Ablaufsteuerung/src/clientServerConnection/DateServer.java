@@ -25,10 +25,10 @@ public class DateServer {
                 Socket socket = listener.accept();
 /** Clients respond on Port 9090 as socket (socket = client) **/
                 try {
-                    PrintWriter out =
-                        new PrintWriter(socket.getOutputStream(), true);
+                    PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                     out.println(new Date().toString());
-                } finally {
+                } 
+                finally {
                     socket.close();
                 }
             }

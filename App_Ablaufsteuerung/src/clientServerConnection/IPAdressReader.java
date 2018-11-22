@@ -5,9 +5,6 @@ import java.util.Enumeration;
 
 public class IPAdressReader {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		try {
 			Enumeration networkInterfaces = NetworkInterface
